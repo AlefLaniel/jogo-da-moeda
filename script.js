@@ -2,8 +2,11 @@ let resultado = document.querySelector('.resultado');
 
 
 function girarMoeda() {
+    let audioElement = document.querySelector(`#som`);
+    audioElement.currentTime = 0;
+    audioElement.play();
     document.querySelector('.moeda').setAttribute('src', './images/girando.gif');
-    setTimeout(resultadoFinal, 1500);
+    setTimeout(resultadoFinal, 2500);
 }
 
 function resultadoFinal() {
