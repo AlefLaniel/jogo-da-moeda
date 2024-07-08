@@ -77,7 +77,18 @@ p{
 
   footer{
       display: flex;
+      flex-direction: column;
+      gap: 8px;
       align-items: center;
       justify-content: center;
       text-align: center;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: black;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
   }
